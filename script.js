@@ -54,7 +54,7 @@ function atualizaTabela() {
   function atualizaMediaFinal() {
   const mediaFinal = calculaMediaFinal();
 //inserindo o calculo da media no html:
-  document.getElementById('mediaFinalValor').innerHTML = mediaFinal;
+  document.getElementById('mediaFinalValor').innerHTML = mediaFinal.toFixed(2); //limita a 2 casas decimais.
   document.getElementById('mediaFinalResultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
